@@ -1,0 +1,357 @@
+* {
+	box-sizing: border-box;
+
+	margin: 0px;
+	padding: 0px;
+
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #24252a;
+	color: #fff;
+}
+
+h1,
+a {
+	font-weight: 500px;
+	font-size: 50px;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+/* Header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: dimgrey;
+	height: 80px;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.header-logo {
+	height: 60px;
+	width: 150px;
+}
+
+.header-search {
+	text-align: center;
+
+	background-color: #24252a;
+	border-radius: 40px;
+
+	height: 60px;
+
+	padding: 10px;
+}
+
+#hs-field {
+	text-align: center;
+
+	background: none;
+	color: #fff;
+	border: none;
+	outline: none;
+
+	height: 40px;
+	width: 230px;
+
+	font-size: 20px;
+	line-height: 40px;
+}
+
+#hs-icon {
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+
+	border-radius: 40px;
+
+	float: right;
+
+	height: 40px;
+	width: 40px;
+
+	padding: 5px;
+}
+
+.header-nav {
+	margin-top: 15px;
+}
+
+.header-navigation a {
+	margin-right: 50px;
+}
+
+#hn-anchor {
+	position: relative;
+
+	margin: 5px 30px;
+
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#hn-anchor::after {
+	content: "";
+
+	background-color: pink;
+
+	border-radius: 20px;
+
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+	height: 3px;
+	width: 100%;
+
+	transform: scale(0, 1);
+	transition: transform 0.5s ease;
+}
+
+#hn-anchor:hover::after {
+	transform: scale(1, 1);
+}
+
+/* Banner */
+
+.banner {
+	background-image: url("../assets/banner/banner3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+
+	height: 1000px;
+	width: 100%;
+}
+
+/* CONTENT */
+
+.container {
+	background-color: #24252a;
+
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+	left: 50%;
+	bottom: -520px;
+
+	border-radius: 20px;
+
+	transform: translate(-50%, -50%);
+
+	height: 700px;
+	width: 1000px;
+}
+
+.selection {
+	text-align: center;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+
+	height: 15%;
+	width: 1000px;
+}
+
+.report-button,
+.review-button {
+	border-style: none;
+
+	height: 100px;
+	width: 250px;
+
+	position: relative;
+
+	transition: 0.5s;
+
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
+.report-button {
+	border-top-left-radius: 20px;
+}
+
+.review-button {
+	border-top-right-radius: 20px;
+}
+
+.report-button.active {
+	background-color: rgb(255, 80, 80);
+	width: 750px;
+}
+
+.review-button.active {
+	background-color: rgb(162, 255, 100);
+	width: 750px;
+}
+
+.content {
+	height: 65%;
+}
+
+.report-pane {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 100%;
+
+	font-size: 25px;
+
+	transition: 0.5s;
+
+	opacity: 1;
+}
+
+.report-pane.active {
+	opacity: 1;
+}
+
+#name,
+#email,
+#number {
+	text-align: center;
+
+	height: 50px;
+	width: 400px;
+
+	font-size: 20px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 20%;
+}
+
+.submit {
+	border-style: none;
+	border-radius: 20px;
+
+	background-color: rgb(162, 255, 100);
+
+	padding: 5px;
+
+	font-size: 30px;
+
+	transition: 0.5s;
+
+	cursor: pointer;
+}
+
+.submit:hover {
+	transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: #24252a;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+
+	height: 200px;
+	width: 100%;
+
+	padding: 25px;
+}
+
+.information {
+	text-align: center;
+	margin: 10px;
+
+	height: 210px;
+	width: 300px;
+}
+
+.information-title {
+	position: relative;
+}
+
+.information-title::after {
+	content: "";
+
+	background-color: #fff;
+
+	border-radius: 40px;
+
+	position: absolute;
+	left: 75px;
+	bottom: 0px;
+
+	height: 3px;
+	width: 145px;
+}
+
+#icons {
+	transition: 0.5s;
+}
+
+#icons:hover {
+	transform: scale(1.25);
+}
+
+.payment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.payment img {
+	height: 100px;
+	width: 100px;
+
+	margin: 10px;
+}
+
+.disclaimer {
+	text-align: center;
+	margin: 10px;
+
+	height: 175px;
+	width: 300px;
+}
+
+.disclaimer-title {
+	position: relative;
+}
+
+.disclaimer-title::after {
+	content: "";
+
+	background-color: #fff;
+
+	border-radius: 40px;
+
+	position: absolute;
+	left: 85px;
+	bottom: 0px;
+
+	height: 3px;
+	width: 130px;
+}

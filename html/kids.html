@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" onkeydown="keyMinimize();">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Document</title>
+
+		<link rel="stylesheet" href="../css/genre.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://kit.fontawesome.com/a7c78b4505.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- HEADER -->
+
+		<div class="header">
+			<!-- HEADER: LOGO -->
+
+			<div class="header-logo">
+				<img src="../assets/png/logo.png" alt="Company Logo" />
+			</div>
+
+			<!-- HEADER: Search -->
+
+			<div class="header-search">
+				<input id="hs-field" type="text" placeholder="E.g trendy, new..." maxlength="15" />
+				<a id="hs-icon" href="#">
+					<img src="../assets/png/search.png" alt="search icon" />
+				</a>
+			</div>
+
+			<!-- HEADER: Navigation -->
+
+			<div class="header-navigation">
+				<a id="hn-anchor" href="../index.html">
+					<i class="fas fa-home"></i>
+					Home
+				</a>
+				<a id="hn-anchor" href="men.html">
+					<i class="fas fa-male"></i>
+					Men
+				</a>
+				<a id="hn-anchor" href="women.html">
+					<i class="fas fa-female"></i>
+					Women
+				</a>
+				<button class="modal">
+					<i class="fas fa-shopping-cart"></i>
+					CART
+				</button>
+			</div>
+		</div>
+
+		<!-- BANNER -->
+
+		<div class="banner"></div>
+		<br /><br /><br /><br /><br /><br />
+
+		<!-- CONTENT -->
+
+		<div class="category">
+			<div class="card">
+				<img src="../assets/kids/BK.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Camilo Short Sleeve Polo</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-8" class="color-btn">&nbsp;</button>
+						<button id="color-7" class="color-btn">&nbsp;</button>
+						<button id="color-6" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/BK2.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Lace Insert</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-5" class="color-btn">&nbsp;</button>
+						<button id="color-4" class="color-btn">&nbsp;</button>
+						<button id="color-3" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/BK3.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Alwin Polo Shirt</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-7" class="color-btn">&nbsp;</button>
+						<button id="color-3" class="color-btn">&nbsp;</button>
+						<button id="color-1" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/BK4.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Wayner Infant Set</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-2" class="color-btn">&nbsp;</button>
+						<button id="color-6" class="color-btn">&nbsp;</button>
+						<button id="color-4" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div class="category">
+			<div class="card">
+				<img src="../assets/kids/WK.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Waine Long Sleeve Polo</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-5" class="color-btn">&nbsp;</button>
+						<button id="color-6" class="color-btn">&nbsp;</button>
+						<button id="color-2" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/WK2.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Knockout Tank</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-3" class="color-btn">&nbsp;</button>
+						<button id="color-7" class="color-btn">&nbsp;</button>
+						<button id="color-8" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/WK3.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Twinning Outfit</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-8" class="color-btn">&nbsp;</button>
+						<button id="color-2" class="color-btn">&nbsp;</button>
+						<button id="color-5" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../assets/kids/WK4.jpg" alt="men" />
+				<div class="overlay overlay-blur">
+					<div class="small-space"></div>
+					<div class="name">
+						<h2>Azure Soft Denim Romper</h2>
+					</div>
+					<br />
+					<div class="size">
+						<h3>Size :</h3>
+						<button class="size-btn">Small</button>
+						<button class="size-btn">Medium</button>
+						<button class="size-btn">Large</button>
+					</div>
+					<div class="color">
+						<h3>Color :</h3>
+						<button id="color-6" class="color-btn">&nbsp;</button>
+						<button id="color-2" class="color-btn">&nbsp;</button>
+						<button id="color-8" class="color-btn">&nbsp;</button>
+					</div>
+					<div class="voucher">
+						<h3>Voucher Code :</h3>
+						<input class="voucher-txt" type="text" placeholder="xxx-xxxx-xxx" />
+					</div>
+					<br />
+					<div class="options">
+						<h4 class="value">
+							<span class="cost">$9.99</span>
+							<span class="cart">
+								<i class="fas fa-shopping-cart"></i>
+								TO CART
+							</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br /><br /><br />
+
+		<!-- FOOTER -->
+
+		<div class="footer">
+			<!-- FOOTER: Information -->
+
+			<div class="information">
+				<h2 class="information-title">Information</h2>
+				<br />
+				<div class="fi-links">
+					<h3>(074) 304-3859</h3>
+					<h3>Santa Justina, Buhi, Camarines Sur</h3>
+					<a href="https://web.facebook.com/100056849745503/videos/2695663727394867/">
+						<i id="icons" class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+						<i id="icons" class="fab fa-youtube-square"></i>
+					</a>
+					<a href="https://www.instagram.com/rick_astley_memes/?hl=en">
+						<i id="icons" class="fab fa-instagram-square"></i>
+					</a>
+				</div>
+			</div>
+
+			<!-- FOOTER: Accepted Payments -->
+
+			<div class="payment">
+				<img src="../assets/png/paypal.png" alt="paypal" />
+				<img src="../assets/png/gcash.png" alt="paypal" />
+				<img src="../assets/png/visa.png" alt="paypal" />
+				<img src="../assets/png/mastercard.png" alt="paypal" />
+			</div>
+
+			<!-- FOOTER: Disclaimer -->
+
+			<div class="disclaimer">
+				<h2 class="disclaimer-title">Disclaimer</h2>
+				<br />
+				<h3>
+					This website is for educational purposes only, the authors do not endorse or promote any
+					products included herein.
+				</h3>
+			</div>
+		</div>
+
+		<!-- POP UP MODAL : CART -->
+
+		<div class="modal-bg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="cart-title">Your Shopping Cart</h2>
+					<h2 class="cart-total">$00.00</h2>
+					<h2 class="cart-buy">Buy</h2>
+					<h2 class="cart-exit">+</h2>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/genre.js"></script>
+		<script src="../js/cart.js"></script>
+	</body>
+</html>

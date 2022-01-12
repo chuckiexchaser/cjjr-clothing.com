@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Document</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="../css/service.css" />
+
+		<script src="https://kit.fontawesome.com/a7c78b4505.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- HEADER -->
+
+		<div class="header">
+			<!-- HEADER: LOGO -->
+
+			<div class="header-logo">
+				<img src="../assets/png/logo.png" alt="Company Logo" />
+			</div>
+
+			<!-- HEADER: Search -->
+
+			<div class="header-search">
+				<input id="hs-field" type="text" placeholder="E.g trendy, new..." maxlength="15" />
+				<a id="hs-icon" href="#">
+					<img src="../assets/png/search.png" alt="search icon" />
+				</a>
+			</div>
+
+			<!-- HEADER: Navigation -->
+
+			<div class="header-navigation">
+				<a id="hn-anchor" href="../index.html">
+					<i class="fas fa-home"></i>
+					Home
+				</a>
+				<a id="hn-anchor" href="store.html">
+					<i class="fas fa-store"></i>
+					Store
+				</a>
+				<a id="hn-anchor" href="service.html">
+					<i class="fas fa-portrait"></i>
+					Service
+				</a>
+			</div>
+		</div>
+
+		<!-- BANNER -->
+
+		<div class="banner"></div>
+
+		<!-- CONTENT -->
+
+		<div class="container">
+			<div class="selection">
+				<div class="report">
+					<button id="btn" class="report-button active">
+						<i class="far fa-flag"></i>
+						REPORT
+					</button>
+				</div>
+				<div class="review">
+					<button id="btn" class="review-button">
+						<i class="far fa-file-alt"></i>
+						REVIEW
+					</button>
+				</div>
+			</div>
+			<div class="content">
+				<!-- REPORT PANE -->
+
+				<div id="cntnt" class="report-pane active">
+					<!-- LEFT SIDE FORM VALUE -->
+
+					<div class="left-panel">
+						<form action="action.php">
+							<div class="report-user">
+								<input id="name" type="text" placeholder="Username" required />
+							</div>
+
+							<br />
+							<br />
+
+							<div class="email">
+								<input
+									id="email"
+									type="email"
+									placeholder="Email Address"
+									autocomplete="on"
+									required
+								/>
+							</div>
+
+							<br />
+							<br />
+
+							<div class="number">
+								<input
+									id="number"
+									type="tel"
+									placeholder="Phone Number"
+									minlength="11"
+									maxlength="13"
+									oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+									required
+								/>
+							</div>
+						</form>
+					</div>
+
+					<!-- RIGHT SIDE FORM VALUE -->
+
+					<div class="right-panel">
+						<form action="action.php">
+							<div class="statement">
+								<textarea
+									style="font-size: 20px; position: relative; bottom: -10px; text-align: center"
+									name="statement"
+									id="statement"
+									cols="40"
+									rows="12"
+									maxlength="300"
+									style="resize: none"
+									placeholder="Statement (300 Characters)..."
+									required
+								></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!-- REVIEW PANE -->
+
+				<br />
+
+				<!-- SUBMIT BUTTON -->
+
+				<div class="btn">
+					<button class="submit">SUBMIT</button>
+				</div>
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<!-- FOOTER -->
+
+		<div class="footer">
+			<!-- FOOTER: Information -->
+
+			<div class="information">
+				<h2 class="information-title">Information</h2>
+				<br />
+				<div class="fi-links">
+					<h3>(074) 304-3859</h3>
+					<h3>Santa Justina, Buhi, Camarines Sur</h3>
+					<a href="https://web.facebook.com/100056849745503/videos/2695663727394867/">
+						<i id="icons" class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+						<i id="icons" class="fab fa-youtube-square"></i>
+					</a>
+					<a href="https://www.instagram.com/rick_astley_memes/?hl=en">
+						<i id="icons" class="fab fa-instagram-square"></i>
+					</a>
+				</div>
+			</div>
+
+			<!-- FOOTER: Accepted Payments -->
+
+			<div class="payment">
+				<img src="../assets/png/paypal.png" alt="paypal" />
+				<img src="../assets/png/gcash.png" alt="paypal" />
+				<img src="../assets/png/visa.png" alt="paypal" />
+				<img src="../assets/png/mastercard.png" alt="paypal" />
+			</div>
+
+			<!-- FOOTER: Disclaimer -->
+
+			<div class="disclaimer">
+				<h2 class="disclaimer-title">Disclaimer</h2>
+				<br />
+				<h3>
+					This website is for educational purposes only, the authors do not endorse or promote any
+					products included herein.
+				</h3>
+			</div>
+		</div>
+
+		<!-- SCRIPT -->
+
+		<script src="../js/service.js"></script>
+	</body>
+</html>
